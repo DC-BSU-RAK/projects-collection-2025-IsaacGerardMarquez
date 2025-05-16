@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- I used a scrollable container for the instruction screen. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/instructions_background"
+    android:padding="24dp">
+
+    <!-- I used a vertical layout for stacking the elements. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- This is the title for the instruction screen. -->
+
+        <!-- This is the instruction steps. They are in a bullet point format. -->
+
+        <!-- This is the Back button to return to the previous screen. -->
+
+        <TextView
+            android:id="@+id/instructionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:layout_marginBottom="8dp"
+            android:text="How to Use GenLingo"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/instructionText"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:lineSpacingExtra="8dp"
+            android:text="• Type a word                 (e.g. “cool” or “truth”)&#10;• Choose a generation&#10;• Tap Translate to see how that word is said in the selected generation&#10;• Hit the speaker button to hear it out loud!"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="188dp"
+            android:layout_height="111dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="Back"
+            android:scaleType="fitCenter"
+            android:src="@drawable/backbutton" />
+
+
+    </LinearLayout>
+</ScrollView>

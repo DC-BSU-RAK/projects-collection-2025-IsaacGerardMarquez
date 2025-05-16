@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is a drawable shape used as a background with border, corner radius, and internal padding. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- This sets the inner fill color of the shape to white. -->
+    <solid android:color="@android:color/white" />
+
+    <!-- This defines a 2dp wide border with a light brown color. -->
+    <stroke
+        android:width="2dp"
+        android:color="#c99a5b" />
+
+    <!-- This rounds the corners of the rectangle with an 8dp radius. -->
+    <corners android:radius="8dp" />
+
+    <!-- This sets padding inside the shape so the content doesn't touch the edges. -->
+    <padding
+        android:left="10dp"
+        android:top="10dp"
+        android:right="10dp"
+        android:bottom="10dp" />
+</shape>

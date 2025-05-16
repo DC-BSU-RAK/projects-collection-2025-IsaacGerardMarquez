@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- I used ScrollView to allow scrolling of content on smaller screens. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/genlingobackgroundimage"
+    android:padding="24dp">
+
+    <!-- This is the main container layout with vertical orientation and centered content. -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <!-- This shows the Logo and App Name -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <!-- App Logo -->
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/genlingo_logo_circle"
+                android:contentDescription="GenLingo Logo" />
+
+            <!-- App Title Text -->
+            <TextView
+                android:text="GenLingo"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#7ec8b2"
+                android:fontFamily="sans-serif-medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <!-- This is the Text Input for user to type a word or phrase. -->
+        <AutoCompleteTextView
+            android:id="@+id/inputText"
+            android:hint="Type a word or phrase..."
+            android:padding="14dp"
+            android:background="@drawable/input_background"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1" />
+
+        <!-- This is a label for the generation selection text. -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/select_generation_underlined"
+            android:textColor="#444444"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- I used a grid layout for the Generation Buttons: 2 columns, 3 rows. -->
+        <GridLayout
+            android:id="@+id/generationButtonsLayout"
+            android:layout_width="291dp"
+            android:layout_height="284dp"
+            android:layout_marginBottom="24dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="3"
+            android:useDefaultMargins="true">
+
+            <!-- The following are Generation Buttons (Boomer to Gen Alpha) -->
+            <!-- Button for Boomer-->
+            <ImageButton
+                android:id="@+id/boomerButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="Boomer"
+                android:scaleType="fitCenter"
+                android:src="@drawable/boomerbutton" />
+
+            <!-- Button for Gen X-->
+            <ImageButton
+                android:id="@+id/genxButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="Gen X"
+                android:scaleType="fitCenter"
+                android:src="@drawable/genxbutton" />
+
+            <!-- Button for Millennial-->
+            <ImageButton
+                android:id="@+id/millennialButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="Millennial"
+                android:scaleType="fitCenter"
+                android:src="@drawable/millennialbutton" />
+
+            <!-- Button for Gen Z-->
+            <ImageButton
+                android:id="@+id/genzButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="Gen Z"
+                android:scaleType="fitCenter"
+                android:src="@drawable/genzbutton" />
+
+            <!-- Button for Gen Alpha -->
+            <!-- This makes the Gen Alpha Button to span full width (2 columns) -->
+            <ImageButton
+                android:id="@+id/genalphaButton"
+                android:layout_width="147dp"
+                android:layout_height="88dp"
+                android:layout_columnSpan="2"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="Gen Alpha"
+                android:scaleType="fitCenter"
+                android:src="@drawable/genalphabutton" />
+        </GridLayout>
+
+        <!-- This is the line between generation buttons and the action buttons -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#4f2c0b"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="5dp" />
+
+
+        <!-- This is to layout the Info, Translate, and Speak button in a row. -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:weightSum="3">
+
+            <!-- Info Button -->
+            <ImageButton
+                android:id="@+id/infoButton"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="How to Use"
+                android:scaleType="fitCenter"
+                android:src="@drawable/instructionbutton" />
+
+            <!-- Translate Button -->
+            <ImageButton
+                android:id="@+id/translateButton"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="Translate"
+                android:scaleType="fitCenter"
+                android:src="@drawable/translate" />
+
+            <!-- Speak Button -->
+            <ImageView
+                android:id="@+id/speakImage"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:contentDescription="Speak Result"
+                android:src="@drawable/ttsbutton" />
+        </LinearLayout>
+
+        <!-- Result Box below the buttons where the translation is shown. -->
+        <TextView
+            android:id="@+id/resultText"
+            android:textSize="20sp"
+            android:textColor="#333333"
+            android:padding="16dp"
+            android:background="@drawable/result_background"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:text="Result will be shown here" />
+
+
+
+    </LinearLayout>
+</ScrollView>
