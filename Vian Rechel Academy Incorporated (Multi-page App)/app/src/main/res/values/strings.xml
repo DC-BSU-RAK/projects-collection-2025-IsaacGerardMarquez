@@ -1,0 +1,10 @@
+<resources>
+    <!-- This is the name of the app that will show on the phone screen. -->
+    <string name="app_name">Vian Rechel Academy Incorporated Inc. </string>
+
+    <!-- This text is used when the navigation menu drawer is opened. -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+
+    <!-- This text is used when the navigation menu drawer is closed. -->
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

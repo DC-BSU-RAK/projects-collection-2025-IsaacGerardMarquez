@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="32dp">
+
+        <!-- Back Button -->
+        <TextView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="◄ Back"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#751A14"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Program Title -->
+        <TextView
+            android:id="@+id/detailProgramTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Program Title"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#751A14"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Program Description -->
+        <TextView
+            android:id="@+id/detailProgramDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Program description goes here."
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:lineSpacingExtra="6dp" />
+    </LinearLayout>
+</ScrollView>

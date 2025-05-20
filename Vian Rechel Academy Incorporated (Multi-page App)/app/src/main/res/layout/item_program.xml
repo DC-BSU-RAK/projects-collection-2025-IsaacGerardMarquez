@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- GIF Image -->
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/programIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_programgif"
+            android:contentDescription="Program Icon" />
+
+
+        <TextView
+            android:id="@+id/programTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Program Title"
+            android:textColor="#751A14"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/programDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Program description goes here."
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:paddingTop="4dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,12 @@
+<!--This defines the items in the navigation drawer of the app that the user can navigate to. -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_home" android:title="Home" />
+    <item android:id="@+id/nav_about" android:title="About" />
+    <item android:id="@+id/nav_programs" android:title="Programs" />
+    <item android:id="@+id/nav_faculty" android:title="Faculty" />
+    <item android:id="@+id/nav_announcements" android:title="Announcements" />
+    <item android:id="@+id/nav_faqs" android:title="FAQs" />
+    <item android:id="@+id/nav_contact" android:title="Contact" />
+    <item android:id="@+id/nav_profile" android:title="Profile" />
+    <item android:id="@+id/nav_logout" android:title="Logout" />
+</menu>
